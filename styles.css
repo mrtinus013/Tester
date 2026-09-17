@@ -34,3 +34,10 @@ body.light #settingsDlg select{background:#fff;color:#253943}
 .distance-sort{font-size:12px;color:var(--muted);white-space:nowrap}
 
 .share-nav{width:100%;font:inherit;cursor:pointer}
+
+.navchoice-open{display:none}
+.navchoices[open]>.navbtn:first-child .navchoice-closed{display:none}
+.navchoices[open]>.navbtn:first-child .navchoice-open{display:inline}
+.navchoices[open]>summary{padding:11px 16px;font-size:14px;opacity:.78}
+.nav-share-hint{font-size:11px;line-height:1.4;color:var(--muted);text-align:center;margin:-4px 12px 12px}
+body.light .nav-share-hint{color:#6a7d87}
