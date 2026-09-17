@@ -1,9 +1,14 @@
-StationZoeker v5.1
-- TomTom GO als directe knop verwijderd.
-- Systeemnavigatie als directe knop verwijderd.
-- Oude opgeslagen TomTom/systeem/Flitsmeister-voorkeuren vallen automatisch terug op Automatisch.
-- Alternatieve keuzes: Apple Maps, Google Maps, Waze en 'Deel naar een andere app…'.
-- De uitklapknop verandert na openen in 'Navigatiekeuze sluiten', zodat duidelijk is dat hij de lijst weer inklapt.
-- Deelmenu vermeldt Flitsmeister, TomTom GO en Tesla als voorbeelden van geschikte apps.
-- Op iOS wordt bij delen een Apple Maps-bestemmingslink meegestuurd; op andere platforms Google Maps.
-- Tesla wordt niet als directe appknop geforceerd: Tesla documenteert het delen van een bestemming via het systeemdeelmenu.
+StationZoeker v5.2
+
+Navigatie:
+- TomTom GO staat weer tussen de standaard navigatie-apps en in de alternatieve navigatielijst.
+- TomTom gebruikt: tomtomgo://x-callback-url/navigate?destination=LAT,LON
+- Tesla staat nu ook tussen de standaard navigatie-apps en in de alternatieve navigatielijst.
+- Tesla ontvangt bestemmingen officieel via de deel-functie van iOS/Android. Daarom opent de Tesla-keuze het native deelmenu met de bestemming; de gebruiker kiest daarin Tesla.
+- Tekst onder 'Deel naar een andere app…' aangepast naar: 'Bijv. Flitsmeister of een andere geschikte navigatie-app'.
+- Apple Maps, Google Maps en Waze blijven ongewijzigd.
+- Oude Flitsmeister/systeemnavigatie-voorkeuren vallen terug op Automatisch.
+- Alle overige functies van v5.1 behouden.
+
+Opmerking TomTom:
+Het gebruikte TomTom GO URL-schema werkt op veel iOS-installaties, maar TomTom GO kan op sommige toestellen de bestemming missen wanneer de app volledig afgesloten was. Dit gedrag ligt aan TomTom GO en is vanuit een statische webapp niet betrouwbaar te omzeilen.
